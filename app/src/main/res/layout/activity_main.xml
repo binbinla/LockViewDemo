@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bgc"
+    tools:context="com.binbin.demo.patternlockdemo.MainActivity">
+
+    <ImageView
+        android:id="@+id/img_hello_bin"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/hello_bin"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello_bin"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <com.andrognito.patternlockview.PatternLockView
+        android:id="@+id/pattern_lock"
+        android:layout_height="280dp"
+        android:layout_width="280dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:aspectRatio="square"
+        app:aspectRatioEnabled="true"
+        app:dotAnimationDuration="100"
+        app:dotCount="3"
+        app:normalStateColor="@color/white"
+        app:correctStateColor="@color/correct_col"
+        app:wrongStateColor="@color/wrong_col"
+
+        />
+
+</LinearLayout>
