@@ -2,6 +2,7 @@ package com.binbin.demo.patternlockdemo;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Canvas;
 import android.os.health.PackageHealthStats;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         //设置绘画路径可不可见
         patternLockView.setInStealthMode(false);
         patternLockView.addPatternLockListener(patternLockViewListener);
+
 
     }
 }
